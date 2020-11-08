@@ -28,7 +28,7 @@ export default {
     removeTodo(todo) {
       this.$emit(
         'update:todos',
-        this.todo.filter((t) => t !== tag)
+        this.todos.filter((t) => t !== todo)
       )
     },
     clearInput() {
@@ -40,6 +40,7 @@ export default {
       todos: this.todos,
       addTodo: this.addTodo,
       removeTodo: this.removeTodo,
+      updateTodo: (value) => (this.input = value),
       removeButtonEvents: (todo) => ({
         click: () => {
           this.removeTodo(todo)
