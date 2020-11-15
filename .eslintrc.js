@@ -12,5 +12,6 @@ module.exports = {
       },
     ],
     'vue/html-self-closing': 'off',
+    'object-curly-spacing': ['error', 'always'],
   },
 }

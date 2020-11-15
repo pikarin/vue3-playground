@@ -53,6 +53,14 @@ export default {
     options: {
       type: Array,
       required: true,
+    },
+    filterFunction: {
+      type: Function,
+      default: (search, options) => {
+        return options.filter(option => {
+          return option.toLowerCase().startsWith(search.toLowerCase())
+        })
+      }
     }
   },
   emits: ['update:modelValue'],
@@ -62,9 +70,7 @@ export default {
   }),
   computed: {
     filteredOptions() {
-      return this.options.filter(option => {
-        return option.toLowerCase().startsWith(this.search.toLowerCase())
-      })
+      return this.filterFunction(this.search, this.options)
     }
   },
   methods: {

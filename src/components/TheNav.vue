@@ -15,10 +15,11 @@ export default {
   name: 'TheNav',
   data: () => ({
     routes: [
-      {name: 'home', text: 'Buttons'},
-      {name: 'todoapp', text: 'Todo App'},
-    ]
-  })
+      { name: 'home', text: 'Select Input' },
+      { name: 'todoapp', text: 'Todo App' },
+      { name: 'buttons', text: 'Buttons' },
+    ],
+  }),
 }
 </script>
 
