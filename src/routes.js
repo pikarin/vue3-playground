@@ -4,12 +4,17 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('./pages/ButtonsShowcase.vue'),
+    component: () => import('./pages/SearchSelectShowcase.vue'),
   },
   {
     path: '/todoapp',
     name: 'todoapp',
     component: () => import('./pages/TodoAppShowcase.vue'),
+  },
+  {
+    path: '/buttons',
+    name: 'buttons',
+    component: () => import('./pages/ButtonsShowcase.vue'),
   },
 ]
 
