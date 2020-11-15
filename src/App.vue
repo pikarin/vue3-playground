@@ -1,18 +1,18 @@
 <template>
-  <img class="mx-auto h-20" alt="Vue logo" src="./assets/logo.png" />
-  <!-- <ShowcaseButtons /> -->
-  <ShowcaseTodoApp />
+  <header
+    class="bg-indigo-500 text-white bg-gradient-to-r from-indigo-500 to-blue-500"
+  >
+    <TheNav />
+  </header>
+
+  <RouterView />
 </template>
 
 <script>
-import ShowcaseButtons from './components/ShowcaseButtons.vue'
-import ShowcaseTodoApp from './components/ShowcaseTodoApp.vue'
+import TheNav from './components/TheNav.vue'
 
 export default {
   name: 'App',
-  components: {
-    // ShowcaseButtons,
-    ShowcaseTodoApp,
-  },
+  components: {TheNav}
 }
 </script>
