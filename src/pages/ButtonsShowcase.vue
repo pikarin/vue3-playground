@@ -42,11 +42,11 @@
 </template>
 
 <script>
-import BaseButton from './BaseButton.vue'
-import ButtonOutline from './ButtonOutline.vue'
+import BaseButton from '../components/BaseButton.vue'
+import ButtonOutline from '../components/ButtonOutline.vue'
 
 export default {
-  name: 'ShowcaseButtons',
+  name: 'ButtonsShowcase',
   components: { BaseButton, ButtonOutline },
 }
 </script>

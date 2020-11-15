@@ -4,12 +4,12 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('./components/ShowcaseButtons.vue'),
+    component: () => import('./pages/ButtonsShowcase.vue'),
   },
   {
     path: '/todoapp',
     name: 'todoapp',
-    component: () => import('./components/ShowcaseTodoApp.vue'),
+    component: () => import('./pages/TodoAppShowcase.vue'),
   },
 ]
 

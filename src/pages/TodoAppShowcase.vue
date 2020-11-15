@@ -51,11 +51,11 @@
 </template>
 
 <script>
-import TodoAppUsingComposition from './TodoAppUsingComposition.vue'
-import TodoAppUsingRenderless from './TodoAppUsingRenderless.vue'
+import TodoAppUsingComposition from '../components/TodoAppUsingComposition.vue'
+import TodoAppUsingRenderless from '../components/TodoAppUsingRenderless.vue'
 
 export default {
-  name: 'ShowcaseTodoApp',
+  name: 'TodoAppShowcase',
   components: { TodoAppUsingComposition, TodoAppUsingRenderless },
 }
 </script>
