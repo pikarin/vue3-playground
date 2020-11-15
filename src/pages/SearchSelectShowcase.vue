@@ -2,7 +2,7 @@
   <div class="max-w-lg mx-auto bg-white rounded shadow-lg p-8">
     <div class="mb-4">
       <label class="font-semibold text-gray-500 mb-2">Band Favorit</label>
-      <InputSelectSearch :options="options" />
+      <InputSelectSearch v-model="selected" :options="options" />
     </div>
     <div class="text-right">
       <BaseButton type="button" color="blue" class="font-bold">
@@ -20,6 +20,7 @@ export default {
   name: 'SearchSelectShowcase',
   components: { InputSelectSearch, BaseButton },
   data: () => ({
+    selected: null,
     options: [
       'Slank',
       '/rif',
