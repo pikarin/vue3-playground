@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 py-2 w-full lg:w-1/2 mx-auto">
+  <div class="px-4 py-2 w-full md:w-2/3 lg:w-1/2 mx-auto">
     <TodoInput
       v-model:todo="todo"
       @click.prevent="addTodo"
